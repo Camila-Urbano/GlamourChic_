@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Bigelow+Rules&family=Griffy&family=Nosifer&family=Poppins:ital,wght@0,400;1,300&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Berkshire+Swash&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/************************************************** WHATSAPP **************************************************/
+.whatsapp
+{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #207483;
+}
+
+.whatsapp i
+{
+    font-size: 30px;
+    color: #fff;
+}
+
+/************************************************** HEADER **************************************************/
+header
+{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 30px -25px black;
+}
+
+/********* LOGO *********/
+header .logo 
+{
+    width: 150px;
+    height: 60px;
+}
+
+header .logo img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/********* NAV *********/
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+ul li
+{
+    padding: 10px 20px 0px;
+}
+
+li a
+{
+    font-size: 18px;
+    padding: 10px;
+    color: #207483;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+li a:hover
+{
+    color: #fff;
+    background-color: #207483;
+}
+
+#icon_menu,
+#icon_agenda
+{
+    font-size: 25px;
+    color: #207483;
+    display: none;
+    cursor: pointer;
+}
+
+.btn a
+{
+    padding: 10px;
+    color: #207483;
+    border: solid 1px #207483;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn a:hover
+{
+    color: #fff;
+    background-color: #207483;
+}
+
+/************************* CITAS *************************/
+.cita
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0, .8);
+    display: none;
+    place-items: center;
+    z-index: 1;
+}
+
+.cita form
+{
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    color: #207483;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+}
+
+form .fa-xmark
+{
+    width: 100%;
+    text-align: right;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #207483;
+    transition: all 0.3s;
+}
+
+form h1
+{
+    text-align: center;
+    color: #207483;
+}
+
+form div
+{
+    width: 100%;
+    display: grid;
+    
+}
+
+form div label
+{
+    padding-bottom: 5px;
+    color: #207483;
+    font-family: 'Abel';
+}
+
+form div input,
+form div select
+{
+    padding: 8px 2px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #dbdada;
+}
+
+#reservar
+{
+    width: 100px;
+    padding: 5px;
+    margin-top: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #207483;
+    transition: all .5s ease;
+}
+
+#reservar:hover
+{
+    border: #207483 solid 1px;
+    color: #207483;
+    background-color: transparent;
+}
+
+form .aceptar
+{
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+form .aceptar p
+{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #207483;
+}
+
+/************************************************** INICIO **************************************************/
+.inicio
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.inicio h1
+{
+    font-size: 70px;
+    color: #207483;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.inicio p
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Bad Script', cursive;
+}
+
+.inicio .img_inicio
+{
+    width: 85%;
+    height: 500px;
+}
+
+.img_inicio img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/************************************************** SERVICIOS **************************************************/
+.servicios
+{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.servicios h1
+{
+    color: #207483;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.servicios .cards_servicios
+{
+    width: 95%;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.cards_servicios .servicio
+{
+    width: 200px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    border: solid 2px #207483;
+}
+
+.servicio .icon_servicio
+{
+    width: 100px;
+    height: 100px;
+}
+
+.icon_servicio img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/************************************************** SOBRE NOSOTROS **************************************************/
+.nosotros
+{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.nosotros .sobre_nosotros,
+.nosotros .experiencia
+{
+    width: 50%;
+    padding: 30px;
+}
+
+.sobre_nosotros h1
+{
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #207483;
+}
+
+.sobre_nosotros p
+{
+    font-size: 15px;
+    color: #46686d;
+    margin-bottom: 50px;
+}
+
+.sobre_nosotros a
+{
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #207483;
+    transition: all .3s ease;
+}
+
+.sobre_nosotros a:hover
+{
+    color: #207483;
+    border: solid 1px #207483;
+    background-color: transparent;
+}
+
+.sobre_nosotros img
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.nosotros .experiencia
+{
+    display: grid;
+    place-items: center;
+}
+
+.experiencia .expe
+{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expe .card
+{
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.card span
+{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.card p
+{
+    font-size: 14px;
+    color: #46686d;
+}
+
+.experiencia img
+{
+    width: 100%;
+    height: 500px;
+    filter: brightness(85%);
+}
+
+/************************* LEER MÁS *************************/
+.leer_mas
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0, .8);
+    display: none;
+    place-items: center;
+    z-index: 1;
+}
+
+.leer_mas .leer
+{
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.leer .fa-x
+{
+    width: 100%;
+    font-size: 25px;
+    color: #207483;
+    cursor: pointer;
+    text-align: right;
+}
+
+.leer h2
+{
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    color: #207483;
+}
+
+.leer p
+{
+    font-size: 14px;
+    color: #46686d;
+}
+
+
+/************************************************** CONTACTO **************************************************/
+.contacto
+{
+    max-width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    color: #fff;
+    background-color: #207483;
+    
+}
+
+.contacto h1
+{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.salon
+{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/************************************************** COMENTARIOS **************************************************/
+.comentario
+{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.comentario h1
+{
+    font-size: 30px;
+    margin: 50px;
+    color: #207483;
+    text-align: center;
+}
+
+.comentario .review-form
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.review-form h4
+{
+    color: #207483;
+    margin-bottom: 10px;
+}
+
+.review-form #review-form
+{
+    width: 60%;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: #c1c9ca;
+}
+
+.review-form input,
+.review-form textarea
+{
+    width: 100%;
+    padding: 8px 2px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    outline: none;
+    background-color: #dbdada;
+}
+
+.review-form textarea
+{
+    height: 100px;
+}
+
+.review-form button
+{
+    padding: 8px;
+    margin-top: 20px;
+    color: #207483;
+    border: solid 1px #207483;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.review-form button:hover
+{
+    color: #fff;
+    background-color: #207483;
+}
+
+.review-list 
+{
+    margin-top: 50px;
+    width: 80%;
+    height: 100%;
+}
+
+.review-list h4
+{
+    margin-top: 50px;
+    text-align: center;
+    color: #207483;
+}
+
+.review-list ul
+{
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-list li {
+    border: 1px solid #207483;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/************************* MENSAJE *************************/
+.alerta
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0, .8);
+    display: none;
+    place-items: center;
+    z-index: 1;
+}
+
+.mensaje
+{
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    background-color: #dbdada;
+}
+
+.mensaje p
+{
+    font-weight: 500;
+    text-align: center;
+    color: #207483;
+}
+
+.mensaje button
+{
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #207483;
+    background-color: transparent;
+    border: 2px solid #207483;
+    transition: all .3s;
+}
+
+.mensaje button:hover
+{
+    color: #fff;
+    background-color: #207483;
+}
+
+/************************************************** FOOTER **************************************************/
+footer
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    background-color: #46686d;
+}
+
+.container_footer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container_footer .logo_footer
+{
+    width: 60%;
+    padding: 20px;
+}
+
+.logo_footer p
+{
+    font-size: 12px;
+}
+
+.container_footer .servicios_footer,
+.container_footer .redes
+{
+    width: 20%;
+    display: grid;
+}
+
+.servicios_footer 
+{
+    display: grid;
+    gap: 8px;
+}
+
+.servicios_footer span
+{
+    font-size: 12px;
+}
+
+.redes a
+{
+    width: 25px;
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.redes a:hover
+{
+    color: #1fc8e6;
+}
+
+footer p
+{
+    font-size: 10px;
+    margin: 10px;
+}

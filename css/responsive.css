@@ -1,0 +1,355 @@
+@media (max-width: 1059px)
+{
+    header #icon_menu,
+    #icon_agenda
+    {
+        display: flex;
+    }
+
+    #icon_agenda
+    {
+        padding-right: 5px;
+    }
+
+    .btn a
+    {
+        display: none;
+    }
+
+    nav
+    {
+        height: 0;
+        width: 200px;
+        position: absolute;
+        justify-items: left;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        box-shadow: 0px 0px 30px -20px rgb(0, 0, 0) ;
+        transition: all 300ms;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+        background: #207483;
+        gap: 5px;
+    }
+
+    nav ul li
+    {
+        padding: 8px 5px;
+    }
+
+    nav ul li a
+    {
+        color:#fff;
+    }
+
+    .mostrar_menu /*CLASE MANIPILADA POR JS*/
+    {
+        height: 235px;
+    }
+
+    .nosotros
+    {
+        display: grid;
+        place-items: center;
+    }
+
+    .nosotros .sobre_nosotros,
+    .nosotros .experiencia
+    {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .sobre_nosotros img
+    {
+        height: 400px;
+    }
+
+    .nosotros .experiencia img
+    {
+        display: none;
+    }
+
+    .container_footer
+    {
+        display: grid;
+        place-items: center;
+    }
+
+    .container_footer .logo_footer
+    {
+        display: grid;
+        place-items: center;
+    }
+
+    .logo_footer p
+    {
+        text-align: center;
+    }
+
+    .container_footer .servicios_footer,
+    .container_footer .redes
+    {
+        width: 60%;
+        place-items: center;
+        padding-bottom: 20px;
+    }
+
+    .leer_mas .leer
+    {
+        width: 95%;
+        height: 60%;
+    }
+
+    .leer h2
+    {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 3px;
+    }
+
+    .leer p
+    {
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width: 745px)
+{
+    .inicio .img_inicio
+    {
+        width: 95%;
+    }
+
+    .img_inicio img
+    {
+        height: 400px;
+    }
+
+    .review-form #review-form
+    {
+        width: 80%;
+    }
+
+    .review-list 
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 613px)
+{
+    .cita form
+    {
+        width: 90%;
+    }
+
+    .img_inicio img
+    {
+        height: 300px;
+    }
+
+    .sobre_nosotros img
+    {
+        height: 300px;
+    }
+
+    .container_footer .logo_footer
+    {
+        width: 100%;
+    }
+
+    .logo_footer p
+    {
+        font-size: 10px;
+    }
+
+    .logo_footer img
+    {
+        width: 200px;
+    }
+
+    .container_footer .servicios_footer,
+    .container_footer .redes
+    {
+        width: 100%;
+    }
+
+    .card span
+    {
+        font-size: 20px;
+    }
+
+    .card p
+    {
+        font-size: 12px;
+    }
+
+    .nosotros .sobre_nosotros,
+    .nosotros .experiencia
+    {
+        width: 100%;
+        padding: 5px;
+    }
+
+    form h1
+    {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 440px)
+{
+    header .logo 
+    {
+        width: 100px;
+        height: 40px;
+    }
+
+    #icon_menu,
+    #icon_agenda
+    {
+        font-size: 18px;
+    }
+
+    .img_inicio img
+    {
+        height: 200px;
+    }
+
+    .inicio
+    {
+        margin-bottom: 10px;
+    }
+
+    .inicio h1
+    {
+        font-size: 40px;
+    }
+
+    .servicios h1,
+    .sobre_nosotros h1,
+    .contacto h1,
+    .comentario h1
+    {
+        font-size: 20px;
+    }
+
+    .servicios .cards_servicios
+    {
+        width: 100%;
+    }
+
+    .cards_servicios .servicio
+    {
+        width: 150px;
+        height: 100px;
+    }
+
+    .servicio .icon_servicio
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .servicio span
+    {
+        font-size: 12px;
+    }
+
+    .sobre_nosotros p
+    {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .sobre_nosotros img
+    {
+        height: 200px;
+        margin-top: 30px;
+    }
+    
+    .sobre_nosotros a
+    {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .expe .card
+    {
+        height: 40px;
+    }
+
+    .card span
+    {
+        font-size: 14px;
+    }
+
+    .card p
+    {
+        font-size: 10px;
+    }
+
+    .leer_mas .leer
+    {
+        padding: 5px;
+    }
+    
+    .leer h2
+    {
+        padding-bottom: 0;
+    }
+
+    .salon h3
+    {
+        font-size: 14px;
+    }
+
+    .salon p 
+    {
+        font-size: 12px;
+    }
+
+    .comentario
+    {
+        padding: 5px;
+    }
+
+    .review-form #review-form
+    {
+        width: 100%;
+    }
+
+    .logo_footer img
+    {
+        width: 150px;
+    }
+
+
+}
+
+@media (max-width: 360px)
+{
+    .inicio h1
+    {
+        font-size: 20px;
+    }
+
+    .inicio p 
+    {
+        font-size: 12px;
+    }
+
+    .nosotros .experiencia
+    {
+        display: none;
+    }
+
+}

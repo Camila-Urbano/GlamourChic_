@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4380b6d3aa.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/icono.jpeg">
+    <title>Glamour Chic</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <div class="whatsapp" title="Contactanos por WhatsApp">
+        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <header>
+
+        <div class="logo">
+            <img loading="lazy" src="./img/icono_transparente.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#comentario">Comentarios</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+            <a href="#" class="agendar">Agendar Cita</a>
+            <i class="fa-solid fa-calendar-days" id="icon_agenda" title="Agendar Cita"></i>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+        </div>
+
+
+    </header>
+
+    <div class="cita">
+
+        <form onsubmit="return validarFormulario()">
+            
+            <i class="fa-solid fa-xmark"></i>
+            <h1>Reservas</h1>
+
+            <div class="nombre">
+                <label>Nombre completo*</label>
+                <input type="text" name="nombre_completo" required>
+            </div>
+
+            <div class="correo">
+                <label>Correo electronico*</label>
+                <input type="text" name="correo" required>
+            </div>
+
+            <div class="telefono">
+                <label>Telefono</label>
+                <input type="text" name="telefono">
+            </div>
+
+            <div class="ayuda">
+                <label>¿Cómo podemos ayudarte?*</label>
+                <input type="text" name="ayuda" required>
+            </div>
+
+            <div class="aceptar">
+                <input type="checkbox" id="acepto_checkbox">
+                <p> Acepto el tratamiento de mis datos.*</p>
+            </div>
+    
+            <input type="submit" value="Reservar" id="reservar">
+
+        </form>
+        
+    </div>
+
+    <section class="inicio" id="inicio">
+
+        <h1>Glamour Chic</h1>
+        <p>
+            "La vida no es perfecta, pero tu cabello puede serlo"
+        </p>
+
+        <div class="img_inicio">
+            <img src="./img/glamour.jpg" alt="" loading="lazy">
+        </div>
+
+    </section>
+
+    <section class="servicios" id="servicios" >
+
+        <h1>Servicios</h1>
+
+        <div class="cards_servicios">
+
+            <div class="servicio">
+                <div class="icon_servicio">
+                    <img src="./img/servicios/esmalte-de-unas.png" alt="" loading="lazy">
+                </div>
+                <span>Manicure y Pedicure</span>
+            </div>
+
+            <div class="servicio">
+                <div class="icon_servicio">
+                    <img src="./img/servicios/plancha-para-cabello.png" alt="" loading="lazy">
+                </div>
+                <span>Alisado y Planchado</span>
+            </div>
+
+            <div class="servicio">
+                <div class="icon_servicio">
+                    <img src="./img/servicios/corte-de-pelo.png" alt="" loading="lazy">
+                </div>
+                <span>Corte de Cabello</span>
+            </div>
+
+            <div class="servicio">
+                <div class="icon_servicio">
+                    <img src="./img/servicios/trenza.png" alt="" loading="lazy">
+                </div>
+                <span>Peinados Especiales</span>
+            </div>
+
+            <div class="servicio">
+                <div class="icon_servicio">
+                    <img src="./img/servicios/maquillaje.png" alt="" loading="lazy">
+                </div>
+                <span>Maquillajes Especiales</span>
+            </div>
+
+            <div class="servicio">
+                <div class="icon_servicio">
+                    <img src="./img/servicios/barberia.png" alt="" loading="lazy">
+                </div>
+                <span>Barbería</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="nosotros" id="nosotros">
+
+        <div class="sobre_nosotros">
+
+            <h1>Sobre nosotros</h1>
+
+            <p>
+                En Glamour Chic, no solo ofrecemos servicios de belleza excepcionales, sino que también creamos 
+                una experiencia que te hace sentir especial desde el momento en que cruzas nuestras puertas. 
+                Nuestro talentoso equipo de estilistas y especialistas en belleza está dedicado a brindarte 
+                tratamientos personalizados y consejos expertos para realzar tu apariencia y aumentar tu autoestima.
+            </p>
+
+            <a href="#" class="btn_mas">Leer más</a>
+
+            <img src="./img/GlamourChic.jpg" alt="" loading="lazy">
+
+        </div>
+
+        <div class="experiencia">
+
+            <div class="expe">
+
+                <div class="card">
+                    <span>6 +</span>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="card">
+                    <span>483</span>
+                    <p>Clientes felices</p>
+                </div>
+                <div class="card">
+                    <span>2</span>
+                    <p>Premios en la industria</p>
+                </div>
+
+            </div>
+
+            <img src="./img/salon_glamourChic.jpg" alt="" loading="lazy">
+
+
+
+        </div>
+
+    </section>
+
+    <div class="leer_mas">
+        <div class="leer">
+            <i class="fa-solid fa-x"></i>
+            <h2>Sobre Nosotros</h2>
+            <p>
+                En Glamour Chic, nuestra pasión es realzar la belleza única que reside en cada uno de nuestros clientes. 
+                Creemos que la belleza es más que piel profunda; es una expresión de confianza y estilo personal. <br>
+
+                En Glamour Chic, no solo ofrecemos servicios de belleza excepcionales, sino que también creamos una 
+                experiencia que te hace sentir especial desde el momento en que cruzas nuestras puertas. 
+                Nuestro talentoso equipo de estilistas y especialistas en belleza está dedicado a brindarte tratamientos 
+                personalizados y consejos expertos para realzar tu apariencia y aumentar tu autoestima.
+            </p>
+
+            <h2>Nuestros Servicios</h2>
+            <p>
+                En Glamour Chic, ofrecemos una amplia gama de servicios de belleza, desde cortes y coloración 
+                de cabello hasta tratamientos faciales rejuvenecedores y servicios de uñas y maquillaje de alta calidad. 
+                Nos esforzamos por mantenernos a la vanguardia de las últimas tendencias y técnicas de belleza, y 
+                utilizamos productos de alta calidad para garantizar resultados excepcionales.
+            </p>
+
+        </div>
+    </div>
+
+    <section class="contacto" id="contacto">
+
+        <h1>Contacto</h1>
+
+        <div class="salon">
+    
+            <h3>Dirección:</h3>
+            <p style="margin-bottom: 20px;">
+                Calle xx # xx-xx 
+                Barrio xxxxxxxxxx, Cali, Colombia
+            </p>
+
+            <h3>Telefonos:</h3>
+            <p>602 xxx - xxxx / 602 xxx - xxxx</p>
+            <p>602 xxx - xxxx / 602 xxx - xxxx</p>
+
+            <div class="iconos">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+    
+        </div>
+
+        <div class="mapa">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15930.587228803013!2d-76.55373178628537!3d3.435829015147695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a68310300075%3A0xd88e534efc39f505!2sParque%20Del%20Perro!5e0!3m2!1ses!2sco!4v1672782423385!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </section>
+
+    <section class="comentario" id="comentario">
+        <h1>Comentarios</h1>
+        <div class="review-form">
+            <form id="review-form">
+                <h4>Deja tu comentario</h4>
+                <input type="text" id="name" placeholder="Nombre" required>
+                <textarea id="comment" placeholder="Tu comentario" required></textarea>
+                <button type="submit">Publicar Comentario</button>
+            </form>
+        </div>
+        <div class="review-list">
+            <h4>Comentarios Recientes</h4>
+            <ul id="review-list">
+                <!-- Los comentarios se agregarán aquí dinámicamente -->
+            </ul>
+        </div>
+
+    </section>
+
+    <div class="alerta">
+        <div class="mensaje">
+            <p>
+                Tu comentario ha sido agregado exitosamente.
+            </p>
+            <button class="agregar_mensaje">Aceptar</button>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="container_footer">
+
+            <div class="logo_footer">
+                <img src="./img/icono_transparente.png" alt="">
+                <p>
+                    En Glamour Chic, nuestra pasión es realzar la belleza única que reside en cada uno de nuestros clientes. 
+                </p>
+            </div>
+
+            <div class="servicios_footer">
+                <h4>Servicios:</h4>
+                <span>Manicure y Pedicure</span>
+                <span>Alisado y Planchado</span>
+                <span>Corte de Cabello</span>
+                <span>Peinados Especiales</span>
+                <span>Maquillajes Especiales</span>
+                <span>Barbería</span>
+            </div>
+
+            <div class="redes">
+                <h4>Siguenos en:</h4>
+
+                <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                
+            </div>
+
+        </div>
+
+
+
+        <p>©2022 Por Laura Camila Urbano Suarez</p>
+    </footer>
+
+
+    <script src="./js/icon_menu.js"></script>
+    <script src="./js/cita.js"></script>
+    <script src="./js/leer_mas.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
